@@ -1,3 +1,10 @@
-import { sum } from "./sum";
+class Application {
+  start() {
+    console.log("hello world");
+  }
+}
 
-console.log(sum(1, 2));
+window.addEventListener("load", () => {
+  const app = new Application();
+  app.start();
+});
