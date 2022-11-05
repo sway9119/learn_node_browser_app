@@ -1,5 +1,16 @@
 {
+  // コンパイルする際の出力方法を変更や記述するルールを設定
   "compilerOptions": {
-    "sourceMap": true // デバッグしやすいようにソースマップを出力する
+    "sourceMap": true, // デバッグしやすいようにソースマップを出力する
+    "target": "ES2015", // 出力するECMAScriptのバージョンを指定
+    "lib": ["DOM", "ESNext"], // 組み込まれるAPI型定義を変更
+    "module": "ES2015", // 出力されるファイルのモジュールの方式を指定
+    "esModuleInterop": true, //exportの書き方を簡略化する
+    "strict": true, // デフォルトより厳しい型チェックを行うstrictモードにする
+    "forceConsistentCasingInFileNames": true, // ファイル名の大文字小文字を区別する
+    "noFallthroughCasesInSwitch": true, // switch文でのbreakかreturnを強制する
+    "noImplicitReturns": true, // 関数内でreturnを返すのを強制する
+    "noUnusedLocals": true, // 使用されていないローカル変数をエラーとする
+    "noUnusedParameters": true // 使用されていない関数のパラメータをエラーとする
   }
 }
