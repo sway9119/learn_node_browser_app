@@ -9,7 +9,7 @@ module.exports = {
   entry: resolve(__dirname, "ts/index.ts"),
   // output: バンドルされてあファイルを出力する場所、出力方法
   output: {
-    filename: "index,js",
+    filename: "index.js",
     path: resolve(__dirname, "dist"),
   },
   // resolve: モジュールの解決方法を指定する。拡張しを指定する。
